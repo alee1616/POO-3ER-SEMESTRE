@@ -1,4 +1,4 @@
-package ejercicios;
+package Ejercicios;
 
 public class Ejercicio1 {
     public static void main(String[] args) {
@@ -7,6 +7,7 @@ public class Ejercicio1 {
         System.out.println("Edad: 17 años");
         System.out.println("Sexo: F");
         System.out.println("Carrera: Ingeniería de Sistemas");
+
     }
 
 }
