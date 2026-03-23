@@ -4,7 +4,7 @@ public class Persona {
 
     /**
      * *Atributos: nombres, apellidos
-     * fecha de nacimiento, sexo
+     * fecha de nacimiento, sexoo
      */
 
     private String nombres;
@@ -16,7 +16,7 @@ public class Persona {
      * constructores
      */
 
-    
+
     public String getNombres() {
         return nombres;
     }
