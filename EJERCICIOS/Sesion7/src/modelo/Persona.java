@@ -1,4 +1,4 @@
-package Modelo;
+package modelo;
 import java.time.LocalDate;
 
 public class Persona {
@@ -56,7 +56,7 @@ public class Persona {
         this.sexo = sexo;
     }
 
-    // 4. Método complementario (Opcional pero recomendado)
+    // 4. Método complementario
     @Override
     public String toString() {
         return "Persona{" +

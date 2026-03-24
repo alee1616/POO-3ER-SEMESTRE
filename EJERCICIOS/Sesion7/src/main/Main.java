@@ -1,5 +1,5 @@
 package main;
-import Modelo.Persona;
+import modelo.Persona;
 import java.time.LocalDate;
 import java.time.Period;
 
