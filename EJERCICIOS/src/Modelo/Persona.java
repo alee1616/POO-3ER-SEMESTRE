@@ -1,22 +1,29 @@
 package Modelo;
+import java.time.LocalDate;
 
 public class Persona {
 
-    /**
-     * *Atributos: nombres, apellidos
-     * fecha de nacimiento, sexoo
-     */
-
+    // 1. Atributos (Privados)
     private String nombres;
     private String apellidos;
     private LocalDate fechaNacimiento;
-    private bolean sexo;
+    private boolean sexo; // Corregido: 'boolean' con doble 'o' no existe
 
-    /**
-     * constructores
-     */
+    // 2. Constructores
 
+    // Constructor vacío (necesario para muchos frameworks)
+    public Persona() {
+    }
 
+    // Constructor con todos los parámetros
+    public Persona(String nombres, String apellidos, LocalDate fechaNacimiento, boolean sexo) {
+        this.nombres = nombres;
+        this.apellidos = apellidos;
+        this.fechaNacimiento = fechaNacimiento;
+        this.sexo = sexo;
+    }
+
+    // 3. Métodos Getter y Setter
     public String getNombres() {
         return nombres;
     }
@@ -41,11 +48,22 @@ public class Persona {
         this.fechaNacimiento = fechaNacimiento;
     }
 
-    public bolean getSexo() {
+    public boolean isSexo() { // Nota: Para booleanos se suele usar 'is' en lugar de 'get'
         return sexo;
     }
 
-    public void setSexo(bolean sexo) {
+    public void setSexo(boolean sexo) {
         this.sexo = sexo;
+    }
+
+    // 4. Método complementario (Opcional pero recomendado)
+    @Override
+    public String toString() {
+        return "Persona{" +
+                "nombres='" + nombres + '\'' +
+                ", apellidos='" + apellidos + '\'' +
+                ", fechaNacimiento=" + fechaNacimiento +
+                ", sexo=" + (sexo ? "Masculino" : "Femenino") +
+                '}';
     }
 }
