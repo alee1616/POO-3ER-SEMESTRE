@@ -59,7 +59,7 @@ public class Persona {
     // 4. Método complementario
     @Override
     public String toString() {
-        return "Persona{" +
+        return "Persona{ " +
                 "nombres='" + nombres + '\'' +
                 ", apellidos='" + apellidos + '\'' +
                 ", fechaNacimiento=" + fechaNacimiento +
